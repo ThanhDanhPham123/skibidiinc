@@ -1,0 +1,45 @@
+.button{
+    display:flex;
+    width: 100px;
+    height:50px;
+    background-color: rgba(255, 255, 255, 0.865);
+    color: rgb(48, 48, 48);
+    border-radius: 20%;
+    opacity: 0;
+    position:absolute;
+    top:350px;
+    left:700px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size:xx-large;
+    font-family:  'ELEGANT', sans-serif;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-name: fade;
+    animation-duration: 1.2s;
+
+}
+body{
+    animation-fill-mode: forwards;
+    animation-name: backgrounds;
+    animation-duration: 1s;
+
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes backgrounds{
+    from{
+       background-color: rgb(255, 255, 255); 
+    }
+    to{
+        background-color: rgba(2, 2, 2, 0.769);
+    }
+}
